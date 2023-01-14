@@ -84,3 +84,10 @@ body {
     border-radius: 1rem;
     background-color: #1a222b;
 }
+
+/* buttons */
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
