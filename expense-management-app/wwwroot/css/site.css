@@ -96,3 +96,9 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+/* Bread Crumb */
+.e-breadcrumb a, e-breadcrumb a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}

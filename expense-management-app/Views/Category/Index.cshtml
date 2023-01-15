@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<expense_management_app.Models.Category>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Categories";
 }
 
 <div class="row">
@@ -21,6 +21,7 @@
         </div>
     </div>
 </div>
+<a asp-action="Create" class="btn btn-success">+ New Category</a>
 
 <script id="typeColumnTemplate" type="text/x-template">
     ${if(Type=="Income")}
