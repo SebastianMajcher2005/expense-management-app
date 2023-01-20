@@ -4,9 +4,6 @@
 }
 
 <h1>Index</h1>
-<p>
-    <a asp-action="AddOrEdit">Create New</a>
-</p>
 <div class="row">
     <div class="col-md-7">
         <ejs-grid id="transactions" dataSource="@Model" gridLines="None" allowSorting="true" allowPaging="true">
@@ -25,9 +22,11 @@
         </div>
     </div>
 </div>
+<p>
+    <a asp-action="AddOrEdit" class="btn btn-success">+ New Transaction</a>
+</p>
 
-
-                <script id="actionColumnTemplate" type="text/x-template">
+<script id="actionColumnTemplate" type="text/x-template">
     <div class="d-flex flex-row justify-content-start">
         <a class="btn btn-sm no-a-decoration" href="/Transaction/AddOrEdit/${TransactionId}">
             <i class="fa-solid fa-pen fa-lg"></i>    

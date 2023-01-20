@@ -8,8 +8,11 @@ namespace expense_management_app.Models
         [Key]
         public int TransactionId { get; set; }
         //CategoryId
+        [Range(1, int.MaxValue,ErrorMessage ="Select a category.")]
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Amount must be greater than 0.")]
+
         public int Amount { get; set; }
 
         [Column(TypeName = "nvarchar(75)")]
