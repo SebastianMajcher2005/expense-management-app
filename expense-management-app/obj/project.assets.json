@@ -1740,11 +1740,11 @@
           }
         }
       },
-      "Syncfusion.EJ2.AspNet.Core/20.4.0.43": {
+      "Syncfusion.EJ2.AspNet.Core/20.4.0.44": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.2",
-          "Syncfusion.Licensing": "20.4.0.43"
+          "Syncfusion.Licensing": "20.4.0.44"
         },
         "compile": {
           "lib/netstandard2.1/Syncfusion.EJ2.dll": {}
@@ -1753,7 +1753,7 @@
           "lib/netstandard2.1/Syncfusion.EJ2.dll": {}
         }
       },
-      "Syncfusion.Licensing/20.4.0.43": {
+      "Syncfusion.Licensing/20.4.0.44": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -5797,10 +5797,10 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Syncfusion.EJ2.AspNet.Core/20.4.0.43": {
-      "sha512": "kP0qYDFUbaEE1A/CqbCStzkl5fVfcJIf1g3EIZ0LJUcTkoR/vAeIbIR//wRi9OVp2Gms24gvxYlTEJnDQ3yv0g==",
+    "Syncfusion.EJ2.AspNet.Core/20.4.0.44": {
+      "sha512": "tEQXGp8gJ/OIgXHWPZAoLq5Rw9ZrDdIMnqGsKcJz6YSr+jJhWbb4Dyes1Mz9WZW/9SLhOokP7aYlGB3KGHqN3w==",
       "type": "package",
-      "path": "syncfusion.ej2.aspnet.core/20.4.0.43",
+      "path": "syncfusion.ej2.aspnet.core/20.4.0.44",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5810,15 +5810,15 @@
         "lib/netstandard1.6/Syncfusion.EJ2.dll",
         "lib/netstandard2.0/Syncfusion.EJ2.dll",
         "lib/netstandard2.1/Syncfusion.EJ2.dll",
-        "syncfusion.ej2.aspnet.core.20.4.0.43.nupkg.sha512",
+        "syncfusion.ej2.aspnet.core.20.4.0.44.nupkg.sha512",
         "syncfusion.ej2.aspnet.core.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Licensing/20.4.0.43": {
-      "sha512": "cjak8qKSWFtZ6w4TieItFSCtzGqixNku2H/SiPJCY7KRWlsv01k/NLT00GwY4frvBiOkTzAMhyceccwNBFqU+w==",
+    "Syncfusion.Licensing/20.4.0.44": {
+      "sha512": "VdynAGuXiYwbp3lpA2gNBTgXfTkG5fpcGuT1doqSetr165SMuydr/jhdEwaOvlCUxFf6JrlTKWWpE7XgDLjrUA==",
       "type": "package",
-      "path": "syncfusion.licensing/20.4.0.43",
+      "path": "syncfusion.licensing/20.4.0.44",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5844,7 +5844,7 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.20.4.0.43.nupkg.sha512",
+        "syncfusion.licensing.20.4.0.44.nupkg.sha512",
         "syncfusion.licensing.nuspec",
         "syncfusion_logo.png"
       ]
@@ -9670,7 +9670,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
-      "Syncfusion.EJ2.AspNet.Core >= 20.4.0.43"
+      "Syncfusion.EJ2.AspNet.Core >= 20.4.0.44"
     ]
   },
   "packageFolders": {
@@ -9738,7 +9738,7 @@
           },
           "Syncfusion.EJ2.AspNet.Core": {
             "target": "Package",
-            "version": "[20.4.0.43, )"
+            "version": "[20.4.0.44, )"
           }
         },
         "imports": [

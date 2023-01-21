@@ -12,7 +12,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.11",
-          "Syncfusion.EJ2.AspNet.Core": "20.4.0.43"
+          "Syncfusion.EJ2.AspNet.Core": "20.4.0.44"
         },
         "runtime": {
           "expense-management-app.dll": {}
@@ -1445,23 +1445,23 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "Syncfusion.EJ2.AspNet.Core/20.4.0.43": {
+      "Syncfusion.EJ2.AspNet.Core/20.4.0.44": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.2",
-          "Syncfusion.Licensing": "20.4.0.43"
+          "Syncfusion.Licensing": "20.4.0.44"
         },
         "runtime": {
           "lib/netstandard2.1/Syncfusion.EJ2.dll": {
-            "assemblyVersion": "20.4.0.43",
-            "fileVersion": "20.4.0.43"
+            "assemblyVersion": "20.4.0.44",
+            "fileVersion": "20.4.0.44"
           }
         }
       },
-      "Syncfusion.Licensing/20.4.0.43": {
+      "Syncfusion.Licensing/20.4.0.44": {
         "runtime": {
           "lib/net6.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "20.4.0.43",
-            "fileVersion": "20.4.0.43"
+            "assemblyVersion": "20.4.0.44",
+            "fileVersion": "20.4.0.44"
           }
         }
       },
@@ -2916,19 +2916,19 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "Syncfusion.EJ2.AspNet.Core/20.4.0.43": {
+    "Syncfusion.EJ2.AspNet.Core/20.4.0.44": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kP0qYDFUbaEE1A/CqbCStzkl5fVfcJIf1g3EIZ0LJUcTkoR/vAeIbIR//wRi9OVp2Gms24gvxYlTEJnDQ3yv0g==",
-      "path": "syncfusion.ej2.aspnet.core/20.4.0.43",
-      "hashPath": "syncfusion.ej2.aspnet.core.20.4.0.43.nupkg.sha512"
+      "sha512": "sha512-tEQXGp8gJ/OIgXHWPZAoLq5Rw9ZrDdIMnqGsKcJz6YSr+jJhWbb4Dyes1Mz9WZW/9SLhOokP7aYlGB3KGHqN3w==",
+      "path": "syncfusion.ej2.aspnet.core/20.4.0.44",
+      "hashPath": "syncfusion.ej2.aspnet.core.20.4.0.44.nupkg.sha512"
     },
-    "Syncfusion.Licensing/20.4.0.43": {
+    "Syncfusion.Licensing/20.4.0.44": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cjak8qKSWFtZ6w4TieItFSCtzGqixNku2H/SiPJCY7KRWlsv01k/NLT00GwY4frvBiOkTzAMhyceccwNBFqU+w==",
-      "path": "syncfusion.licensing/20.4.0.43",
-      "hashPath": "syncfusion.licensing.20.4.0.43.nupkg.sha512"
+      "sha512": "sha512-VdynAGuXiYwbp3lpA2gNBTgXfTkG5fpcGuT1doqSetr165SMuydr/jhdEwaOvlCUxFf6JrlTKWWpE7XgDLjrUA==",
+      "path": "syncfusion.licensing/20.4.0.44",
+      "hashPath": "syncfusion.licensing.20.4.0.44.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
