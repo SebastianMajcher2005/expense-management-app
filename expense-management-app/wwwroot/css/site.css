@@ -23,6 +23,10 @@ body {
     font-size: x-large;
 }
 
+.main-content {
+    margin-left: 290px;
+}
+
 /* Grid */
 .e-grid {
     border: 0;
@@ -101,4 +105,11 @@ body {
 .e-breadcrumb a, e-breadcrumb a:hover {
     text-decoration: none !important;
     color: inherit !important;
+}
+
+/* Sidebar */
+#sidebar {
+    background: #12161d;
+    border-right: 1px dashed rgba(75,82,85,0.24);
+    padding: 10px 20px;
 }
