@@ -36,6 +36,19 @@ namespace expense_management_app.Controllers
             int TotalBalance = TotalIncome - TotalExpense;
             ViewBag.TotalBalance = TotalBalance.ToString("C0");
 
+            //doughnut chart 
+            ViewBag.DoughnutChartData = SelectedTransactions
+                .Where(i => i.Category.Type == "Expense" && i.Category.Type == "Income")
+                .GroupBy(j => j.Category.CategoryId)
+                .Select(k => new
+                {
+                    categoryTitleWithIcon = k.First().Category.Icon + " " + k.First().Category.Title,
+                    amount = k.Sum(j => j.Amount),
+                    formattedAmount = k.Sum(j => j.Amount).ToString("C0"),
+                })
+                .ToList();
+
+
             return View();
         }
     }

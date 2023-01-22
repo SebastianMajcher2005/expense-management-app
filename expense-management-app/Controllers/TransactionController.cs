@@ -60,18 +60,32 @@ namespace expense_management_app.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Transactions == null)
+            //if (_context.Transactions == null)
+            //{
+            //    return Problem("Entity set 'ApplicationDbContext.Transactions'  is null.");
+            //}
+            //var transaction = await _context.Transactions.FindAsync(id);
+            //if (transaction != null)
+            //{
+            //    _context.Transactions.Remove(transaction);
+            //}
+
+            
+
+            if (id == null || _context.Transactions == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Transactions'  is null.");
+                return NotFound();
             }
-            var transaction = await _context.Transactions.FindAsync(id);
-            if (transaction != null)
+
+            var transaction = await _context.Transactions
+                .FirstOrDefaultAsync(m => m.TransactionId == id);
+            if (transaction == null)
             {
-                _context.Transactions.Remove(transaction);
+                return NotFound();
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return View(transaction);
         }
 
 
