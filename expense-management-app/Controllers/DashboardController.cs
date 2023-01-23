@@ -38,14 +38,14 @@ namespace expense_management_app.Controllers
 
             //doughnut chart 
             ViewBag.DoughnutChartData = SelectedTransactions
-                .Where(i => i.Category.Type == "Expense" && i.Category.Type == "Income")
+                .Where(i => i.Category.Type == "Expense")
                 .GroupBy(j => j.Category.CategoryId)
                 .Select(k => new
                 {
                     categoryTitleWithIcon = k.First().Category.Icon + " " + k.First().Category.Title,
                     amount = k.Sum(j => j.Amount),
                     formattedAmount = k.Sum(j => j.Amount).ToString("C0"),
-                })
+                }).OrderByDescending(l => l.amount)
                 .ToList();
 
 
