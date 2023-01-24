@@ -49,6 +49,41 @@ namespace expense_management_app.Controllers
                 .ToList();
 
 
+            //income
+            List<SplineChartData> IncomeSummary = SelectedTransactions
+            .Where(i => i.Category.Type == "Income")
+            .GroupBy(j => j.Date)
+            .Select(k => new SplineChartData()
+            {
+                day = k.First().Date.ToString("dd-MMM"),
+                income = k.Sum(l => l.Amount)
+            }).ToList();
+
+            List<SplineChartData> ExpenseSummary = SelectedTransactions
+            .Where(i => i.Category.Type == "Expense")
+            .GroupBy(j => j.Date)
+            .Select(k => new SplineChartData()
+            {
+                day = k.First().Date.ToString("dd-MMM"),
+                expense = k.Sum(l => l.Amount)
+            }).ToList();
+
+            string[] last7Days = Enumerable.Range(0, 7)
+                .Select(i => StartDate.AddDays(i).ToString("dd-MMM"))
+                .ToArray();
+
+            ViewBag.SplineChartData = from day in last7Days
+                                      join income in IncomeSummary on day equals income.day into dayIncomeJoined
+                                      from income in dayIncomeJoined.DefaultIfEmpty()
+                                      join expense in ExpenseSummary on day equals expense.day into expenseJoined
+                                      from expense in dayIncomeJoined.DefaultIfEmpty()
+                                      select new
+                                      {
+                                          day = day,
+                                          income = income == null ? 0 : income.income,
+                                          expense = expense == null ? 0 : expense.expense,
+                                      };
+
             return View();
         }
     }
