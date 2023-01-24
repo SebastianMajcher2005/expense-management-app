@@ -66,7 +66,14 @@
             <div class="card-subtitle p-4">
                 <h5 class="fw-bold">Income vs Expense</h5>
             </div>
-            <ejs-chart id="spline-chart"></ejs-chart>
+            <ejs-chart id="spline-chart">
+                <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+                <e-chart-primaryyaxis></e-chart-primaryyaxis>
+                <e-series-collection>
+                    <e-series dataSource="@ViewBag.SplineChartData" xName="day" yName="income" name="Income" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+                    <e-series dataSource="@ViewBag.SplineChartData" xName="day" yName="expense" name="Expense" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+                </e-series-collection>
+            </ejs-chart>
         </div>
     </div>
 </div>
