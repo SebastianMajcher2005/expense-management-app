@@ -66,13 +66,19 @@
             <div class="card-subtitle p-4">
                 <h5 class="fw-bold">Income vs Expense</h5>
             </div>
-            <ejs-chart id="spline-chart">
-                <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+            <ejs-chart id="spline-chart" palettes="@(new string[] {"#54ffa9","red"} )">
+                <e-chart-primaryxaxis valueType="Category">
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                </e-chart-primaryxaxis>
                 <e-chart-primaryyaxis></e-chart-primaryyaxis>
                 <e-series-collection>
-                    <e-series dataSource="@ViewBag.SplineChartData" xName="day" yName="income" name="Income" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
-                    <e-series dataSource="@ViewBag.SplineChartData" xName="day" yName="expense" name="Expense" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+                    <e-series dataSource="@ViewBag.SplineChartData" width="3" xName="day" yName="income" name="Income" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+                    <e-series dataSource="@ViewBag.SplineChartData" width="3" xName="day" yName="expense" name="Expense" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
                 </e-series-collection>
+                <e-chart-legendsettings position="Bottom" alignment="Far">
+                    <e-legendsettings-textstyle color="white" size="1rem"></e-legendsettings-textstyle>
+                </e-chart-legendsettings>
+                <e-chart-tooltipsettings enable shared></e-chart-tooltipsettings>
             </ejs-chart>
         </div>
     </div>
