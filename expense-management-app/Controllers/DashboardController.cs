@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using expense_management_app.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace expense_management_app.Controllers
 {
+    [Authorize]
     public class DashboardController : Controller
     {
         private readonly ApplicationDbContext _context;

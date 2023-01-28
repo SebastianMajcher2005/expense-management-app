@@ -1,4 +1,5 @@
-﻿@*
+﻿@using Microsoft.AspNetCore.Identity
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -30,27 +31,32 @@
         iconCss = "fa-solid fa-arrow-right-arrow-left",
     });
 }
-<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px">
-    <e-content-template>
 
-        <div class="logo-wrapper">
-            <div class="app-logo">
-                <img src="~/favicon-32x32.png"/>
-            </div>
-            <div class="w-100">
+{
+    <ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px">
+        <e-content-template>
+
+            <div class="logo-wrapper">
+                <div class="app-logo">
+                    <img src="~/favicon-32x32.png"/>
+                </div>
+                <div class="w-100">
                  
+                </div>
             </div>
-        </div>
 
-        <div class="profile-wrapper">
-            <img />
-            <div class="titles d-flex flex-column ps-3">
-                <h6 class="mb-0">Expense management</h6>
-                <span class="text-muted">XYZ</span>
+            <div class="profile-wrapper">
+                <img />
+                <div class="titles d-flex flex-column ps-3">
+                    <h6 class="mb-0">Expense management</h6>
+                    <span class="text-muted">XYZ</span>
 
+                </div>
             </div>
-        </div>
 
-        <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
-    </e-content-template>
-</ejs-sidebar>
+            <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
+        </e-content-template>
+    </ejs-sidebar>
+}
+
+
