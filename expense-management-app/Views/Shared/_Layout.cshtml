@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using expense_management_app.Areas.Identity.Data
+
+@inject SignInManager<UserLogin> SignInManager
+@inject UserManager<UserLogin> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,8 +17,12 @@
     <link rel="stylesheet" href="~/expense_management_app.styles.css" asp-append-version="true" />
     <script src="https://cdn.syncfusion.com/ej2/20.4.38/dist/ej2.min.js"></script>
 </head>
+
+
 <body class="e-bigger">
     <partial name="_SideBar" />
+    @if (SignInManager.IsSignedIn(User))
+{
     <nav class="navbar sticky-top bg-body-tertiary">
       <div class="container-fluid py-2 px-4">
          <i class="fa-solid fa-magnifying-glass"></i>
@@ -23,23 +32,28 @@
          </div>
       </div>
     </nav> 
+}
     <div class="main-content">
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="@(ViewData["isDashboard"] == null?"col-md-10":"col-md-12")>
                     <main role="main" class="pb-3">
-                        @if (ViewData["isDashboard"] == null)
+                        @if (ViewData["isDashboard"] == null || ViewData["Login"] == null)
                         {
-                            <div class="row">
-                                <div class="d-flex flex-column mb-5">
-                                    <div class="d-flex mb-1">
-                                        <div class="flex-grow-1">
-                                            <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <div class="row">
+                                    <div class="d-flex flex-column mb-5">
+                                        <div class="d-flex mb-1">
+                                            <div class="flex-grow-1">
+                                                <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
+                                            </div>
                                         </div>
+                                        <ejs-breadcrumb id="breadcrumb" separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")"></ejs-breadcrumb>
                                     </div>
-                                    <ejs-breadcrumb id="breadcrumb" separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")"></ejs-breadcrumb>
                                 </div>
-                            </div>
+                            }
+                        
                         }
                         @RenderBody()
                     </main>

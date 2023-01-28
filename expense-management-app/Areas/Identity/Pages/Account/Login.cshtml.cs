@@ -18,6 +18,7 @@ using Microsoft.Extensions.Logging;
 
 namespace expense_management_app.Areas.Identity.Pages.Account
 {
+    
     public class LoginModel : PageModel
     {
         private readonly SignInManager<UserLogin> _signInManager;
