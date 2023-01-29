@@ -225,3 +225,18 @@ nav.navbar {
 .app-logo {
     padding: 10px 30px;
 }
+
+
+label {
+    color: black;
+    font-size: 18px;
+}
+
+.remember {
+    color: white;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

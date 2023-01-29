@@ -14,6 +14,7 @@ namespace expense_management_app.Controllers
             _context = context;
         }
 
+
         public async Task<ActionResult> Index()
         {
             DateTime StartDate = DateTime.Today.AddDays(-6);
@@ -78,7 +79,7 @@ namespace expense_management_app.Controllers
                                       join income in IncomeSummary on day equals income.day into dayIncomeJoined
                                       from income in dayIncomeJoined.DefaultIfEmpty()
                                       join expense in ExpenseSummary on day equals expense.day into expenseJoined
-                                      from expense in dayIncomeJoined.DefaultIfEmpty()
+                                      from expense in expenseJoined.DefaultIfEmpty()
                                       select new
                                       {
                                           day = day,
