@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using expense_management_app.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace expense_management_app.Controllers
 {
+    [Authorize]
     public class DashboardController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -11,6 +13,7 @@ namespace expense_management_app.Controllers
         {
             _context = context;
         }
+
 
         public async Task<ActionResult> Index()
         {
@@ -76,7 +79,7 @@ namespace expense_management_app.Controllers
                                       join income in IncomeSummary on day equals income.day into dayIncomeJoined
                                       from income in dayIncomeJoined.DefaultIfEmpty()
                                       join expense in ExpenseSummary on day equals expense.day into expenseJoined
-                                      from expense in dayIncomeJoined.DefaultIfEmpty()
+                                      from expense in expenseJoined.DefaultIfEmpty()
                                       select new
                                       {
                                           day = day,

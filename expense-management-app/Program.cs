@@ -1,5 +1,8 @@
 using expense_management_app.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using expense_management_app.Data;
+using expense_management_app.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+builder.Services.AddDbContext<LoginDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+
+builder.Services.AddDefaultIdentity<UserLogin>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<LoginDbContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,8 +29,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
