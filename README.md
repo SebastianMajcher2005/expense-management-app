@@ -21,3 +21,21 @@ What this app does?
  <li>HTML, CSS, JS</li>
  <li>Microsoft SQL Server</li>
 </ul>
+
+<h1>My biggest challenges at building this app</h1>
+<ul>
+ <li>Problems with Entity Framework libraries</li>
+ I can't create Controller for transactions, after cleaning nuget data and change versions of packages from 6.0.12 to 6.0.13 everything works fine.
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+</ul>
+
+<h1>Application look</h1>
+<b>Login page</b>
+![login-page](https://user-images.githubusercontent.com/101508780/215560591-6ea2cca8-8ae2-4cdf-820f-bf3eb1c27bd9.png)
+<p>This is deafult page after running app if session is not disappear and user is log out</p>
+
+
+<b></b>
