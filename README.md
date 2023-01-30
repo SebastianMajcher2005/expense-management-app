@@ -34,8 +34,13 @@ What this app does?
 
 <h1>Application look</h1>
 <b>Login page</b>
-![login-page](https://user-images.githubusercontent.com/101508780/215560591-6ea2cca8-8ae2-4cdf-820f-bf3eb1c27bd9.png)
-<p>This is deafult page after running app if session is not disappear and user is log out</p>
-
-
+<img src="https://user-images.githubusercontent.com/101508780/215560591-6ea2cca8-8ae2-4cdf-820f-bf3eb1c27bd9.png"/>
+<ul>
+ <li>This is deafult page after running app if session is expired and user is log out</li><br/>
+ <li>If user forgot password they can resart it by clicking red button and write old and new password</li><br/>
+ <li>If the user forgets the password, he can reset it by clicking the red button and completing the appropriate form.</li><br/>
+ <li>If there is a new user here, he can create his account by clicking the green button and entering his e-mail address and password (telephone number and other data can be added in the account configuration panel after logging in)
+</li><br/>
+ <li>Gray button is used for resending email confirmation to mail</li>
+</ul>
 <b></b>
