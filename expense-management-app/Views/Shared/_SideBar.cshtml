@@ -39,31 +39,31 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px">
-        <e-content-template>
+    <ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px">
+            <e-content-template>
 
-            <div class="logo-wrapper">
-                <div class="app-logo">
-                    <img src="~/favicon-32x32.png"/>
-                </div>
-                <div class="w-100">
+                <div class="logo-wrapper">
+                    <div class="app-logo">
+                        <img src="~/favicon-32x32.png"/>
+                    </div>
+                    <div class="w-100">
                  
+                    </div>
                 </div>
-            </div>
-            <div class="profile-wrapper">
-                <img />
-                <div class="titles d-flex flex-column ps-3">
-                    <h5>Expense management</h5>
-                    <h6 class="mb-0" style="position: relative; right: 25px;"><a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a></h6>
-                    <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
-                            <button id="logout" type="submit" class="btn btn-primary">Logout</button>
-                     </form>
+                <div class="profile-wrapper">
+                    <img />
+                    <div class="titles d-flex flex-column ps-3">
+                        <h5>Expense management</h5>
+                        <h6 class="mb-0" style="position: relative; right: 25px;"><a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a></h6>
+                        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
+                                <button id="logout" type="submit" class="btn btn-primary">Logout</button>
+                         </form>
+                    </div>
                 </div>
-            </div>
 
-            <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
-        </e-content-template>
-    </ejs-sidebar>
+                <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
+            </e-content-template>
+        </ejs-sidebar>
 }
 else 
 {
