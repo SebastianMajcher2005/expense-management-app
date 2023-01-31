@@ -22,6 +22,7 @@ What this app does?
  <li>Microsoft SQL Server</li>
 </ul>
 
+<!--
 <h1>My biggest challenges at building this app</h1>
 <ul>
  <li>Problems with Entity Framework libraries</li>
@@ -31,7 +32,7 @@ What this app does?
  <li></li>
  <li></li>
 </ul>
-
+-->
 <h1>Application look</h1>
 <b>Login page</b>
 <img src="https://user-images.githubusercontent.com/101508780/215560591-6ea2cca8-8ae2-4cdf-820f-bf3eb1c27bd9.png"/>
