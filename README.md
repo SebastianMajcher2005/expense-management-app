@@ -94,10 +94,33 @@ What this app does?
   <img src="https://user-images.githubusercontent.com/101508780/215813354-3f9b2a0f-9ea2-49b8-b4e8-d2ab7392dfc3.png"/>
   <li>Next is the amount of money.</li>
   <b>Create transaction page - Amount</b>
-  <img src="https://user-images.githubusercontent.com/101508780/215814938-2576be8e-db92-40f3-b607-d9c65130b1c8.png"/>
+  <img src="https://user-images.githubusercontent.com/101508780/215822192-5f0edad0-4d78-4803-83de-3dc03d93f39a.png"/>
   <li>And last is note.</li>
   <b>Create transaction page - Note</b>
-  <img src="https://user-images.githubusercontent.com/101508780/215815285-9fe7e43e-9ccf-4c79-acbc-2fece5630918.png"/>
+  <img src="https://user-images.githubusercontent.com/101508780/215822018-c7af3c69-c5c9-4454-a6b2-5543db1962e8.png"/>
   <li>After clicking Submit button and and complete all fields transaction is saved to database.</li>
+ </ul>
+</ul>
+<b>Manage account</b>
+<img src="https://user-images.githubusercontent.com/101508780/215824698-4b960a1f-3189-46cd-9a2a-d5777d48b557.png"/>
+<p>In this page user can add phone number.</p>
+<ul>
+ <b>Change email page</b>
+ <img src="https://user-images.githubusercontent.com/101508780/215827783-2e4bf716-af10-4e55-b070-5bdfd5eca281.png"/>
+ <b>Change passowrd page</b>
+ <img src="https://user-images.githubusercontent.com/101508780/215828200-d180b587-cfa4-45a2-9b96-aab9e48acf1c.png"/>
+ <b>Thwo factor authentication page</b>
+ <img src="https://user-images.githubusercontent.com/101508780/215828606-908c96d4-b87a-4b1f-a64a-0fd15aba99e9.png"/>
+ <ul>
+  <b>Enable Authenticator page</b>
+  <img src="https://user-images.githubusercontent.com/101508780/215829325-aa5d297c-7ecc-4558-a19b-923c036e3e1d.png"/>
+  <li>(DEMO)</li>
+  <b>Reset authenticator app page</b>
+  <img src="https://user-images.githubusercontent.com/101508780/215829789-63625070-0d61-432d-b365-6964645e5125.png"/>
+  <li>(DEMO)</li>
+  <b>Personal data page</b>
+  <img src="https://user-images.githubusercontent.com/101508780/215830352-1accb3c4-5e90-425b-8c08-dad19f780cd5.png"/>
+  <li>User can download his data in .json file</li>
+  <li>User can delete his account</li>
  </ul>
 </ul>
