@@ -91,7 +91,6 @@ What this app does?
   <li>Amount of money</li>
   <li>Note</li>
  </ul>
- <h1></h1>
  <li>On the page with the list of transactions, after clicking the New Transaction button, you are redirected to the transaction wizard page.</li>
  <ul>
   <h1></h1>
