@@ -71,3 +71,33 @@ What this app does?
  <li>After clicking the Submit button, a new category is created and saved to the database.</li><br/>
  <li>The title and icon fields are required.</li><br/>
 </ul>
+<b>Transactions list page</b>
+<img src="https://user-images.githubusercontent.com/101508780/215800361-d96a57da-d127-4962-a9c1-fc4888468495.png"/>
+<ul>
+ <li>The transaction page displays all added transactions.</li><br/>
+ <li>As in the case of categories, it can be deleted and edited.</li><br/>
+ <b>Edit transaction page</b>
+ <img src="https://user-images.githubusercontent.com/101508780/215801934-41a2ab9e-4a43-4ca1-9162-5d37d004d192.png"/>
+ <ul>The user can change:
+  <li>Date</li>
+  <li>Category</li>
+  <li>Amount of money</li>
+  <li>Note</li>
+ </ul>
+ <li>On the page with the list of transactions, after clicking the New Transaction button, you are redirected to the transaction wizard page.</li>
+ <ul>
+  <li>The date is selected first. The default is today's date.</li>
+  <b>Create transaction page - Date</b><br/>
+  <img src="https://user-images.githubusercontent.com/101508780/215812588-8b78bf64-1569-4a36-9a3c-df4c4f6bfdb9.png"/>
+  <li>Next is the category to choose from. The entire list of previously created categories is presented.</li>
+  <b>Create transaction page - Category</b>
+  <img src="https://user-images.githubusercontent.com/101508780/215813354-3f9b2a0f-9ea2-49b8-b4e8-d2ab7392dfc3.png"/>
+  <li>Next is the amount of money.</li>
+  <b>Create transaction page - Amount</b>
+  <img src="https://user-images.githubusercontent.com/101508780/215814938-2576be8e-db92-40f3-b607-d9c65130b1c8.png"/>
+  <li>And last is note.</li>
+  <b>Create transaction page - Note</b>
+  <img src="https://user-images.githubusercontent.com/101508780/215815285-9fe7e43e-9ccf-4c79-acbc-2fece5630918.png"/>
+  <li>After clicking Submit button and and complete all fields transaction is saved to database.</li>
+ </ul>
+</ul>
