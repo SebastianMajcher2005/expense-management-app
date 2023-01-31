@@ -94,8 +94,8 @@ What this app does?
  <h1></h1>
  <li>On the page with the list of transactions, after clicking the New Transaction button, you are redirected to the transaction wizard page.</li>
  <ul>
-  <li>The date is selected first. The default is today's date.</li>
   <h1></h1>
+  <li>The date is selected first. The default is today's date.</li>
   <b>Create transaction page - Date</b><br/>
   <img src="https://user-images.githubusercontent.com/101508780/215812588-8b78bf64-1569-4a36-9a3c-df4c4f6bfdb9.png"/>
   <h1></h1>
