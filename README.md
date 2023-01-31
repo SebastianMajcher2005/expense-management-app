@@ -128,6 +128,7 @@ What this app does?
  <b>Thwo factor authentication page</b>
  <img src="https://user-images.githubusercontent.com/101508780/215828606-908c96d4-b87a-4b1f-a64a-0fd15aba99e9.png"/>
  <ul>
+  <h1></h1>
   <b>Enable Authenticator page</b>
   <img src="https://user-images.githubusercontent.com/101508780/215829325-aa5d297c-7ecc-4558-a19b-923c036e3e1d.png"/>
   <h1></h1>
