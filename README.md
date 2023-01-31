@@ -18,7 +18,6 @@ What this app does?
  <li>Entity Framework</li>
  <li>Syncfusion</li>	
  <li>C#</li>
- <li>HTML, CSS, JS</li>
  <li>Microsoft SQL Server</li>
 </ul>
 
